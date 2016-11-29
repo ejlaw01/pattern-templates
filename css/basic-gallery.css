@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 90%;
+  height: 15vh;
+  display: block;
+  margin: 2% 5%;
+  background-color: black;
+}
+
+.gallery {
+  width: 90%;
+  height: 60vh;
+  display: block;
+  margin: 2% 5%;
+}
+
+.item {
+  float: left;
+  width: 30%;
+  height: 42.5%;
+  margin: 1.5%;
+  background-color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    height: 10vh;
+  }
+  .gallery {
+    height: 100vh;
+    padding: 1.75%;
+  }
+  .item {
+    width: 42.5%;
+    height: 28%;
+    margin: 3.75%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .gallery {
+    height: 175vh;
+    overflow-y: visible;
+  }
+  .item {
+    float: none;
+    display: block;
+    width: 90%;
+    height: 14%;
+  }
+}
